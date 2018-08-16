@@ -33,7 +33,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install git+https://github.com/keithlee-co-uk/dbconnection.git#dbconnection
-            pip install -r requirements.txt
+            pip install -r requirements/dev.txt
 
       - save_cache:
           paths:
