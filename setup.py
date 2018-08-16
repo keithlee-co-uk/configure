@@ -3,19 +3,17 @@
 
 from setuptools import setup
 
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
-
 setup(name='configure',
       version='0.0.2',
       description='Python Configure Utility',
       author='Keith Lee',
       author_email='code@keithlee.co.uk',
       url='https://github.com/keithlee-co-uk/configure',
-      packages=['configure'],
-      dependency_links=['http://github.com/ikeithlee-co-uk/dbconnection.git#egg=dbconnection'],
+      dependency_links=['git+https://github.com/keithlee-co-uk/dbconnection.git#egg=dbconnection'],
 
-      install_requires=requirements,
+      install_requires=['configobj',
+                        'Crypto',
+                        'dbconnection'],
       extras_require={
           'test': ["pytest"],
       }
