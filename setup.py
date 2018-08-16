@@ -7,7 +7,7 @@ with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
 setup(name='configure',
-      version='0.0.1',
+      version='0.0.2',
       description='Python Configure Utility',
       author='Keith Lee',
       author_email='code@keithlee.co.uk',
