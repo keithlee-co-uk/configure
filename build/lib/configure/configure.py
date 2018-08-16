@@ -4,6 +4,7 @@ from configobj import ConfigObj
 from collections import namedtuple
 from dbconnection.connectionfactory import ConnectionFactory
 
+
 ###############################################################################
 class Configuration(dict):
 
@@ -11,7 +12,6 @@ class Configuration(dict):
     def __init__(self, **kw):
         dict.__init__(self, kw)
         self.__dict__ = self
-
 
     # -------------------------------------------------------------------------
     def add_argparser_values(self, argparser):

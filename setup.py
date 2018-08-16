@@ -13,6 +13,7 @@ setup(name='configure',
       author_email='code@keithlee.co.uk',
       url='https://github.com/keithlee-co-uk/configure',
       packages=['configure'],
+      dependency_links=['http://github.com/ikeithlee-co-uk/dbconnection.git#egg=dbconnection'],
 
       install_requires=requirements,
       extras_require={
